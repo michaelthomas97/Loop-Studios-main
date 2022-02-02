@@ -10,43 +10,93 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <header>
-
-    <div class="header-hero">
+    <div class="hero-cont">
+    <div class="header-hero-img"></div>
+    <div class="nav-container">
+      <div class="logo"><h1><strong>loopstudios</strong></h1></div>
       <nav>
-        <div class="nav-container">
-          <div class="logo-cont"><h1><strong>loopstudios</strong></h1></div>
-          <ul>
-            <li class="list-item"><a class="link-item" href="#">About</a></li>
-            <li class="list-item"><a class="link-item" href="#">Careers</a></li>
-            <li class="list-item"><a class="link-item" href="#">Events</a></li>
-            <li class="list-item"><a class="link-item" href="#">Products</a></li>
-            <li class="list-item"><a class="link-item" href="#">Support</a></li>
-          </ul>
-        </div>
+        <ul class="nav-menu">
+          <li class="list-item"><a class="nav-link" href="#">About</a></li>
+          <li class="list-item"><a class="nav-link" href="#">Careers</a></li>
+          <li class="list-item"><a class="nav-link" href="#">Events</a></li>
+          <li class="list-item"><a class="nav-link" href="#">Products</a></li>
+          <li class="list-item"><a class="nav-link" href="#">Support</a></li>
+        </ul>
         <div class="hamburger">
-          <span class="bar1"></span>
-          <span class="bar2"></span>
-          <span class="bar3"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
       </nav>
-
     </div>
-
-
-
-
-
-
-
-
-
-
+  </div>
   </header>
 
-
+<script src="../JS/main.js"></script>
 </body>
 </html>
+
+
+<!--  .hamburger{
+    
+        display: none;
+        cursor: pointer;
+
+        @include large-tablet{
+
+            display: block;
+            margin-left: auto;
+            padding: 30px;
+        }
+
+//NAVIGATION MOBILE FRIENDLY HAMBURGER BARS
+
+        .bar{
+
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            background-color: white;
+        }
+
+//NAVIGATION MOBILE FRIENDLY ACTIVE HAMBURGER CROSS (WHEN CLICKED ON), REMOVED MIDDLE LINE
+
+        .hamburger.active  .bar:nth-child(2){
+            
+            @include large-tablet{
+                opacity: 0;
+
+            }
+        }
+      
+//NAVIGATION MOBILE FRIENDLY ACTIVE HAMBURGER CROSS (WHEN CLICKED ON), 1ST LINE ROTATE 
+
+        .hamburger.active   .bar:nth-child(1){
+            
+            @include large-tablet{
+                transform: translateY(8px) rotate(45deg);
+
+
+            }
+        }
+
+//NAVIGATION MOBILE FRIENDLY ACTIVE HAMBURGER CROSS (WHEN CLICKED ON), 3RD LINE ROTATE 
+
+        .hamburger.active      .bar:nth-child(3){
+    
+                @include large-tablet{
+            
+                    transform: translateY(-8px) rotate(-45deg);
+                }
+            }
+    }-->

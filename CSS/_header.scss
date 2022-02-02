@@ -1,96 +1,209 @@
-.header-hero{
+.hero-cont{
+
+.header-hero-img{
+
     background-image: url('../images/desktop/image-hero.jpg');
     background-position: center;
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
+    height: 1100px;
     width: 100%;
-    height: 1200px;
-
-    @include four-k{
-
-    }
+    position: relative;
 
     @include large-laptop{
-        height: 1100px;
-    }
-
-    @include med-laptop{
         height: 1000px;
     }
 
-    @include small-laptop{
-
+    @include med-laptop{
         height: 900px;
+    }
+
+    @include small-laptop{
+        
 
     }
 
     @include large-tablet{
-
     }
 
     @include med-tablet{
+       
     }
 
     @include small-tablet{
+       
+    }
+    
+}
+
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 5%;
+    width: 100%;
+
+    @include large-laptop{
+        top: 2%;
 
     }
 
-    @include large-phone{
-
+    @include med-laptop{
+        top: 1%;
     }
 
-    @include med-phone{
-        background-image: url('../images/mobile/image-hero.jpg');
-
+    @include small-laptop{
+        
+        top: 0;
     }
 
-    @include small-phone{
+    @include large-tablet{
 
+   
     }
 
-    .nav-container{
-        display: flex;
-        align-items: center;
+    @include med-tablet{
+       
+    }
 
-        .logo-cont{            
+    @include small-tablet{
+       
+    }
 
-            padding: 30px 100px;
+    .logo{
 
-            h1{
+        margin: 0px 100px;
+
+        @include large-laptop{
+            margin: 0px 75px;
+        }
+
+        @include med-laptop{
+            margin: 0px 60px;
+        }
+
+        @include small-laptop{
+            
+
+        }
+
+        @include large-tablet{
+        }
+
+        @include med-tablet{
+           
+        }
+
+        @include small-tablet{
+           
+        }
+
+        h1{
+            color: white;
+            font-family: 'Alata', sans-serif;
+            font-size: 55px;
+        }
+    }
+
+    nav{
+
+        margin-left: auto;
+
+   
+
+    .nav-menu{
+        display: flex; 
+        margin-right: 100px;
+
+        @include large-laptop{
+            margin-right: 75px;
+        }
+
+        @include med-laptop{
+            margin-right: 60px;
+        }
+
+        @include small-laptop{
+            
+
+        }
+
+        @include large-tablet{
+
+            display: none;
+        }
+
+        @include med-tablet{
+           
+        }
+
+        @include small-tablet{
+           
+        }
+
+   
+        .list-item{
+            list-style: none;
+            margin: 0px 40px;
+
+
+            a{
+                text-decoration: none;
                 color: white;
                 font-family: 'Alata', sans-serif;
-                font-weight: 400;
-                font-size: 40px;
-                margin: 0;
+                position: relative;
+                font-size: 20px;
+                
+              
+             }
 
-            }
+             a::after{
+                 content: "";
+                 position: absolute;
+                 width: 0;
+                 background-color: white;
+                 height: 2px;
+                 left: 0;
+                 bottom: -5px;
+                 transition: ease-in-out 300ms;
+             }
 
-        }
-
-        ul{
-
-            display: flex;
-            margin-left: auto;
-            padding: 30px;
-
-            .list-item{
-                list-style-type: none;
-                margin: 0px 40px;
-
-                .link-item{
-                    text-decoration: none;
-                    color: white;
-                    font-family: 'Alata', sans-serif;
-                    font-weight: 400;
-                    font-size: 20px;
-                }
-
-
-            .link-item:hover{
-                border-bottom: 2px solid white;
-                transition: 2px ease-in-out 0.3s;
-            }
+             a:hover::after{
+                 width: 100%;
+             }
             }
         }
+
+            .nav-menu:active{
+
+
+        @include large-tablet {
+            display: block;
+            position: fixed;
+            z-index: 1;
+            left: -100%;
+           gap: 0;
+           flex-direction: column;
+           text-align: center;
+           transition: 0.3s;
+           justify-content: center;
+           left: 50%;
+           top: 33%;
+           transform: translate(-50%, -50%);
+           background-color: white;
+           border-radius: 20px;
+           padding: 100px 300px;
+        }
+
+        
+
     }
+ 
+
+    }
+
+
+}
+
 }
