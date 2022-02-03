@@ -1,209 +1,257 @@
 .hero-cont{
 
+position: relative;
+border-bottom: 1px solid #E2E8F0;
+
 .header-hero-img{
 
-    background-image: url('../images/desktop/image-hero.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 1100px;
-    width: 100%;
-    position: relative;
+background-image: url('../images/desktop/image-hero.jpg');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 1100px;
+width: 100%;
+position: relative;
 
-    @include large-laptop{
-        height: 1000px;
-    }
+@include large-laptop{
+height: 1000px;
+}
 
-    @include med-laptop{
-        height: 900px;
-    }
+@include med-laptop{
+height: 900px;
+}
 
-    @include small-laptop{
-        
+@include small-laptop{
 
-    }
 
-    @include large-tablet{
-    }
+}
 
-    @include med-tablet{
-       
-    }
+@include large-tablet{
+}
 
-    @include small-tablet{
-       
-    }
+@include med-tablet{
+
+}
+
+@include small-tablet{
+
+}
+
+}
+
+.navbar{
+
+position: absolute;
+display: flex;
+top: 10px;
+align-items: center;
+width: 100%;
+
+
+.logo{
+
+margin: 0px 100px;
+
+@include large-laptop{
+margin: 0px 75px;
+}
+
+@include med-laptop{
+margin: 0px 60px;
+}
+
+@include small-laptop{
+
+
+}
+
+@include large-tablet{
+    z-index: 2;
+
+}
+
+@include med-tablet{
+
+}
+
+@include small-tablet{
+
+}
+
+h1{
+color: white;
+font-family: 'Alata', sans-serif;
+font-size: 55px;
+
+@include large-tablet{
+    font-size: 50px;
+
+}
+}
+}
+
+
+.nav-menu{
+display: flex;
+margin-left: auto;
+padding: 20px;
+align-items: center;
+
+@include large-laptop{
+margin-right: 75px;
+}
+
+@include med-laptop{
+margin-right: 60px;
+}
+
+@include large-tablet{
+display: none;
+}
+
+.nav-item{
+list-style: none;
+margin: 0px 40px;
+
+@include large-tablet{
     
-}
-
-
-.nav-container{
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 5%;
     width: 100%;
-
-    @include large-laptop{
-        top: 2%;
-
-    }
-
-    @include med-laptop{
-        top: 1%;
-    }
-
-    @include small-laptop{
-        
-        top: 0;
-    }
-
-    @include large-tablet{
-
-   
-    }
-
-    @include med-tablet{
-       
-    }
-
-    @include small-tablet{
-       
-    }
-
-    .logo{
-
-        margin: 0px 100px;
-
-        @include large-laptop{
-            margin: 0px 75px;
-        }
-
-        @include med-laptop{
-            margin: 0px 60px;
-        }
-
-        @include small-laptop{
-            
-
-        }
-
-        @include large-tablet{
-        }
-
-        @include med-tablet{
-           
-        }
-
-        @include small-tablet{
-           
-        }
-
-        h1{
-            color: white;
-            font-family: 'Alata', sans-serif;
-            font-size: 55px;
-        }
-    }
-
-    nav{
-
-        margin-left: auto;
-
-   
-
-    .nav-menu{
-        display: flex; 
-        margin-right: 100px;
-
-        @include large-laptop{
-            margin-right: 75px;
-        }
-
-        @include med-laptop{
-            margin-right: 60px;
-        }
-
-        @include small-laptop{
-            
-
-        }
-
-        @include large-tablet{
-
-            display: none;
-        }
-
-        @include med-tablet{
-           
-        }
-
-        @include small-tablet{
-           
-        }
-
-   
-        .list-item{
-            list-style: none;
-            margin: 0px 40px;
-
-
-            a{
-                text-decoration: none;
-                color: white;
-                font-family: 'Alata', sans-serif;
-                position: relative;
-                font-size: 20px;
-                
-              
-             }
-
-             a::after{
-                 content: "";
-                 position: absolute;
-                 width: 0;
-                 background-color: white;
-                 height: 2px;
-                 left: 0;
-                 bottom: -5px;
-                 transition: ease-in-out 300ms;
-             }
-
-             a:hover::after{
-                 width: 100%;
-             }
-            }
-        }
-
-            .nav-menu:active{
-
-
-        @include large-tablet {
-            display: block;
-            position: fixed;
-            z-index: 1;
-            left: -100%;
-           gap: 0;
-           flex-direction: column;
-           text-align: center;
-           transition: 0.3s;
-           justify-content: center;
-           left: 50%;
-           top: 33%;
-           transform: translate(-50%, -50%);
-           background-color: white;
-           border-radius: 20px;
-           padding: 100px 300px;
-        }
-
-        
+    display: flex;
+    justify-content: flex-start;
 
     }
- 
 
-    }
+
+.nav-link{
+text-decoration: none;
+color: white;
+font-family: 'Alata', sans-serif;
+position: relative;
+font-size: 20px;
+transition: ease 0.7s;
+
+}
+
+.nav-link::after{
+content: "";
+position: absolute;
+width: 0;
+background-color: white;
+height: 2px;
+left: 0;
+bottom: -5px;
+transition: ease-in-out 300ms;
+
+@include large-tablet{
+display: none;
+}
+}
+
+a:hover::after{
+width: 100%;
+
+@include large-tablet{
+display: none;
+}
+
+}
+}
+}
+
+
+.nav-menu.active{       
+
+@include large-tablet {
+display: block;
+position: fixed;
+z-index: 1;
+left: -100%;
+gap: 0;
+flex-direction: column;
+text-align: center;
+transition: 0.3s;
+justify-content: center;
+left: 50%;
+top: 40%;
+transform: translate(-50%, -50%);
+background-color: black;
+border-radius: 20px;
+padding: 600px 600px;
 
 
 }
+
+@include med-tablet{
+
+}
+
+@include small-tablet{
+
+}
+
+@include large-phone {
+}
+}
+
+
+}
+
+
+
+
+//NAVIGATION MOBILE FRIENDLY HAMBURGER ICON
+.hamburger{
+
+display: none;
+cursor: pointer;
+
+@include large-tablet{
+display: block;
+margin-left: auto;
+padding: 30px;
+}
+
+//NAVIGATION MOBILE FRIENDLY HAMBURGER BARS
+.bar{
+display: block;
+width: 25px;
+height: 3px;
+margin: 5px auto;
+-webkit-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+background-color: white;
+}
+}
+
+//NAVIGATION MOBILE FRIENDLY ACTIVE HAMBURGER CROSS (WHEN CLICKED ON), REMOVED 
+//MIDDLE LINE AND CROSS THE TOP AND BOTTOM LINES
+.hamburger.active  {
+
+    z-index: 2;
+
+    
+.bar:nth-child(2){
+
+@include large-tablet{
+opacity: 0;
+}
+}
+
+.bar:nth-child(1){
+
+@include large-tablet{
+transform: translateY(8px) rotate(45deg);
+}
+}
+
+.bar:nth-child(3){
+
+@include large-tablet{
+transform: translateY(-8px) rotate(-45deg);
+}
+}
+
+}
+
 
 }
