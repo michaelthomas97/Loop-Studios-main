@@ -1,0 +1,51 @@
+.leader-intercative-cont{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+    .leader-img{
+
+
+    }
+
+    .leader-txt-cont{
+    background-color: white;
+    position: relative;
+    margin: 10px 100px;
+
+    @include large-laptop{
+   
+        }
+        
+        @include med-laptop{
+     
+
+        }
+        
+        @include large-tablet{
+      
+        }
+     
+
+        .leader-header{
+            h1{
+                font-family: 'Josefin Sans', sans-serif;
+                font-size: 60px;
+                font-weight: 600;
+            }
+        }
+
+        .leader-txt{
+
+            p{
+                font-family: 'Alata', sans-serif;
+                color: grey;
+                letter-spacing: 2px;
+                font-size: 17px;
+                font-weight: 200;
+                opacity: 0.7;
+            }
+        }
+    }

@@ -63,17 +63,37 @@ body {
 @media (max-width: 1250px) {
   .hero-cont .navbar .logo {
     z-index: 2;
+    margin: 0px 45px;
   }
 }
 
-.hero-cont .navbar .logo h1 {
+@media (max-width: 900px) {
+  .hero-cont .navbar .logo {
+    margin: 0px 35px;
+  }
+}
+
+@media (max-width: 800px) {
+  .hero-cont .navbar .logo {
+    margin: 0px 25px;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-cont .navbar .logo {
+    margin: 0px 20px;
+  }
+}
+
+.hero-cont .navbar .logo a {
   color: white;
   font-family: 'Alata', sans-serif;
   font-size: 55px;
+  text-decoration: none;
 }
 
 @media (max-width: 1250px) {
-  .hero-cont .navbar .logo h1 {
+  .hero-cont .navbar .logo a {
     font-size: 50px;
   }
 }
@@ -132,6 +152,15 @@ body {
   font-size: 20px;
   -webkit-transition: ease 0.7s;
   transition: ease 0.7s;
+  margin: 35px 0px;
+}
+
+@media (max-width: 1250px) {
+  .hero-cont .navbar .nav-menu .nav-item .nav-link {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+  }
 }
 
 .hero-cont .navbar .nav-menu .nav-item .nav-link::after {
@@ -185,7 +214,8 @@ body {
             transform: translate(-50%, -50%);
     background-color: black;
     border-radius: 20px;
-    padding: 600px 600px;
+    width: 100%;
+    padding: 500px 100px;
   }
 }
 
@@ -198,13 +228,13 @@ body {
   .hero-cont .hamburger {
     display: block;
     margin-left: auto;
-    padding: 30px;
+    padding: 10px 20px 0px 0px;
   }
 }
 
 .hero-cont .hamburger .bar {
   display: block;
-  width: 25px;
+  width: 30px;
   height: 3px;
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
@@ -234,5 +264,147 @@ body {
     -webkit-transform: translateY(-8px) rotate(-45deg);
             transform: translateY(-8px) rotate(-45deg);
   }
+}
+
+.hero-border-motto-cont {
+  position: absolute;
+  top: 20vh;
+  padding: 50px 100px;
+}
+
+@media (max-width: 2000px) {
+  .hero-border-motto-cont {
+    padding: 40px 75px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .hero-border-motto-cont {
+    padding: 20px 65px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .hero-border-motto-cont {
+    padding: 20px 65px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .hero-border-motto-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 50%;
+    padding: 0;
+  }
+}
+
+.hero-border-motto-cont .motto {
+  background: transparent;
+  border: 4px solid white;
+  width: 35vw;
+}
+
+@media (max-width: 1700px) {
+  .hero-border-motto-cont .motto {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 1250px) {
+  .hero-border-motto-cont .motto {
+    width: 90vw;
+  }
+}
+
+.hero-border-motto-cont .motto h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 100px;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 2000px) {
+  .hero-border-motto-cont .motto h1 {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .hero-border-motto-cont .motto h1 {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .hero-border-motto-cont .motto h1 {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .hero-border-motto-cont .motto h1 {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-border-motto-cont .motto h1 {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-border-motto-cont .motto h1 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-border-motto-cont .motto h1 {
+    font-size: 50px;
+  }
+}
+
+.leader-intercative-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.leader-txt-cont {
+  background-color: white;
+  position: relative;
+  margin: 10px 100px;
+}
+
+.leader-txt-cont .leader-header h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.leader-txt-cont .leader-txt p {
+  font-family: 'Alata', sans-serif;
+  color: grey;
+  letter-spacing: 2px;
+  font-size: 17px;
+  font-weight: 200;
+  opacity: 0.7;
 }
 /*# sourceMappingURL=style.css.map */

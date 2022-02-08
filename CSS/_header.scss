@@ -67,21 +67,33 @@ margin: 0px 60px;
 
 @include large-tablet{
     z-index: 2;
+    margin: 0px 45px;
+
 
 }
 
 @include med-tablet{
 
+    margin: 0px 35px;
 }
 
 @include small-tablet{
+    margin: 0px 25px;
+}
+
+@include large-phone{
+    margin: 0px 20px;
+}
+
+@include small-phone{
 
 }
 
-h1{
+a{
 color: white;
 font-family: 'Alata', sans-serif;
 font-size: 55px;
+text-decoration: none;
 
 @include large-tablet{
     font-size: 50px;
@@ -129,7 +141,13 @@ font-family: 'Alata', sans-serif;
 position: relative;
 font-size: 20px;
 transition: ease 0.7s;
+margin: 35px 0px;
 
+@include large-tablet{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
 }
 
 .nav-link::after{
@@ -158,7 +176,6 @@ display: none;
 }
 }
 
-
 .nav-menu.active{       
 
 @include large-tablet {
@@ -176,9 +193,8 @@ top: 40%;
 transform: translate(-50%, -50%);
 background-color: black;
 border-radius: 20px;
-padding: 600px 600px;
-
-
+width: 100%;
+padding: 500px 100px;
 }
 
 @include med-tablet{
@@ -192,6 +208,8 @@ padding: 600px 600px;
 @include large-phone {
 }
 }
+
+
 
 
 }
@@ -208,13 +226,13 @@ cursor: pointer;
 @include large-tablet{
 display: block;
 margin-left: auto;
-padding: 30px;
+padding: 10px 20px 0px 0px;
 }
 
 //NAVIGATION MOBILE FRIENDLY HAMBURGER BARS
 .bar{
 display: block;
-width: 25px;
+width: 30px;
 height: 3px;
 margin: 5px auto;
 -webkit-transition: all 0.3s ease-in-out;
@@ -253,5 +271,137 @@ transform: translateY(-8px) rotate(-45deg);
 
 }
 
+
+}
+
+//MOTTO
+
+.hero-border-motto-cont{
+
+    position: absolute;
+    top: 20vh;
+    padding: 50px 100px;
+
+    
+
+
+    @include large-laptop{
+
+        padding: 40px 75px;
+
+
+    }
+
+    @include med-laptop{
+        padding: 20px 65px;
+
+
+    }
+
+    @include small-laptop{
+
+        padding: 20px 65px;
+
+
+    }
+    
+    @include large-tablet{
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50%;
+        padding: 0;
+
+    }
+    
+    @include med-tablet {
+
+  
+
+    }
+
+    .motto{
+
+        background: transparent;
+        border: 4px solid white;
+        width: 35vw;
+
+        @include med-laptop{
+    
+            width: 40vw;
+        }
+            
+        @include small-laptop{
+    
+           
+        }
+
+        @include large-tablet{
+          
+            width: 90vw;
+         
+        }
+        
+        @include small-tablet {
+
+        }
+
+        @include large-phone {
+       
+
+        }
+
+        h1{
+
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 100px;
+            font-weight: 400;
+            color: white;
+            text-align: center;
+
+            @include large-laptop{
+
+                font-size: 80px;
+
+            }
+    
+            @include med-laptop{
+    
+                font-size: 70px;
+
+            }
+    
+            @include small-laptop{
+    
+                font-size: 70px;
+
+            }
+            
+            @include large-tablet{
+            
+                font-size: 80px;
+
+            }
+            
+            @include med-tablet {
+                font-size: 70px;
+
+            }
+
+            @include large-phone{
+                font-size: 60px;
+            }
+
+            @include med-phone{
+                font-size: 50px;
+            }
+
+            @include small-phone{
+
+            }
+        }
+    }
 
 }
