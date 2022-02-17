@@ -54,6 +54,14 @@
     }
 };
 
+@mixin interactive{
+    @media (max-width: 1600px){
+
+        @content
+
+    }
+};
+
 @mixin med-laptop{
     @media (max-width: 1700px){
 

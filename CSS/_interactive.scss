@@ -1,51 +1,233 @@
 .leader-intercative-cont{
 
+
     display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 200px 100px 100px 100px;
 
-}
-    .leader-img{
+    @include large-laptop{
+        padding: 180px 80px 80px 80px;
+    }
 
+    @include large-tablet{
+          
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 150px 0px 0px 0px;
+        
 
     }
 
-    .leader-txt-cont{
-    background-color: white;
-    position: relative;
-    margin: 10px 100px;
-
-    @include large-laptop{
-   
-        }
-        
-        @include med-laptop{
-     
-
-        }
+    .leader-img{
         
         @include large-tablet{
-      
+           
+
+            width: 100vw;
+            display: flex;
+            justify-content: center;
         }
-     
+
+        img{
+            height: 580px;
+            position: relative;
+            left: 230px;
+            z-index: 1;
+
+            @include large-laptop{
+                height: 550px;
+                left: 200px;
+
+            }
+
+            @include med-laptop{
+                height: 500px;
+                left: 140px;
+            }
+
+            @include interactive{
+
+                height: 400px;
+                left: 90px;
+            }
+
+
+            @include large-tablet{
+                padding: 0;
+                left: 0;
+                height: 550px;
+                width: 800px;
+            }
+            @include med-tablet{
+                height: 450px;
+                width: 600px;
+            }
+
+            @include small-tablet{
+
+                height: 400px;
+                width: 550px;
+            }
+
+            @include large-phone{
+                height: 300px;
+                width: 450px;
+            }
+            
+        }
+    }
+
+    .leader-txt-cont{
+
+        background: white;
+        z-index: 2;
+        position: relative;
+        top: 255px;
+        height: 260px;
+        padding: 70px 30px 0px 60px;
+        left: 50px;
+
+        @include large-laptop{
+            top: 260px;
+            height: 250px;
+        }
+
+        @include med-laptop{
+            top: 225px;
+            height: 210px;
+            left: 5px;
+        }
+
+        @include interactive{
+            top: 170px;
+            left: -10px;
+            padding: 50px 30px 0px 60px;
+        }
+
+        @include large-tablet{
+
+            top: 0;
+            left: 0;
+            margin-top: 25px;
+        }
+
+        @include med-tablet{
+
+            margin-top: 10px;
+        }
+ 
+        @include small-tablet{
+
+            margin-top: 0px;
+        }
+
+        @include large-phone{
+
+        }
+
+
+
+
 
         .leader-header{
+
+
             h1{
+
                 font-family: 'Josefin Sans', sans-serif;
-                font-size: 60px;
-                font-weight: 600;
+                font-size: 70px;
+                font-weight: 400;
+                letter-spacing: 2px;
+                margin: 0;
+
+                @include large-laptop{
+                    font-size: 55px;
+                }
+
+                @include med-laptop{
+                    font-size: 48px;
+                }
+
+                @include interactive{
+                    font-size: 43px;
+                }
+
+                @include large-tablet{
+                    justify-content: center;
+                    display: flex;
+                    font-size: 70px;
+                    font-weight: 600;
+                }
+
+                @include med-tablet{
+                    font-size: 55px;
+                }
+
+                @include small-tablet{
+
+                    font-size: 50px;
+                }
+
+                @include large-phone{
+                    font-size: 40px;
+                 }
+
             }
         }
 
         .leader-txt{
 
+
             p{
                 font-family: 'Alata', sans-serif;
-                color: grey;
-                letter-spacing: 2px;
-                font-size: 17px;
-                font-weight: 200;
-                opacity: 0.7;
+                font-size: 18px;
+                letter-spacing: 1px;
+                opacity: 0.5;
+                font-weight: 100;
+                
+
+                @include large-laptop{
+                    margin-top: 30px;
+                    font-size: 15px;
+                }
+
+                @include med-laptop{
+
+                }
+
+                @include interactive{
+                    font-size: 12px;
+                }
+
+
+                @include large-tablet{
+                    justify-content: center;
+                    display: flex;
+                    font-size: 18px;
+                    font-weight: 550;
+                    padding-bottom: 30px;
+                }
+
+                @include med-tablet{
+
+                    font-size: 16px;
+                }
+
+                @include small-tablet{
+                    max-width: 100%;
+                    padding: 1em;
+                    margin-bottom: .3em;
+                    text-align: center;
+                    font-size: 15px;
+                }
+
+                @include large-phone{
+               }
+
             }
         }
+
     }
+
+
+}
