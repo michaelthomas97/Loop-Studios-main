@@ -1,17 +1,10 @@
 .hero-cont{
 
-position: relative;
-border-bottom: 1px solid #E2E8F0;
+    @include hero_cont;
 
 .header-hero-img{
 
-background-image: url('../images/desktop/image-hero.jpg');
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-height: 1100px;
-width: 100%;
-position: relative;
+@include hero_img;
 
 @include large-laptop{
 height: 1000px;
@@ -41,16 +34,13 @@ height: 900px;
 
 .navbar{
 
-position: absolute;
-display: flex;
-top: 10px;
-align-items: center;
-width: 100%;
+@include flex_row_center;
+@include hero_nav;
 
 
 .logo{
 
-margin: 0px 100px;
+@include hero_logo;
 
 @include large-laptop{
 margin: 0px 75px;
@@ -90,10 +80,7 @@ margin: 0px 60px;
 }
 
 a{
-color: white;
-font-family: 'Alata', sans-serif;
-font-size: 55px;
-text-decoration: none;
+@include hero_logo_txt;
 
 @include large-tablet{
     font-size: 50px;

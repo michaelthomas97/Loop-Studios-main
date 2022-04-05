@@ -1,0 +1,45 @@
+@mixin flex_row_center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex_col_center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin hero_cont{
+    position: relative;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+@mixin hero_img{
+    background-image: url('../images/desktop/image-hero.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1100px;
+    width: 100%;
+    position: relative;
+}
+
+@mixin hero_nav{
+    position: absolute;
+    top: 10px;
+    width: 100%;
+}
+
+@mixin hero_logo{
+    margin: 0px 100px;
+}
+
+@mixin hero_logo_txt{
+color: white;
+font-family: 'Alata', sans-serif;
+font-size: 55px;
+text-decoration: none;
+}

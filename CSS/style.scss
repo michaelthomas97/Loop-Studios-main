@@ -1,5 +1,7 @@
-@import '_media-queries';
+@import '_mixins.scss';
+@import '_media-queries.scss';
 @import '_body';
 @import '_header.scss';
 @import '_interactive.scss';
 @import '_creations.scss';
+@import '_footer_nav.scss';

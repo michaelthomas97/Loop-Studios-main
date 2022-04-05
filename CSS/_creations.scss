@@ -1,260 +1,440 @@
-.creation-head{
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-top: 30px;
-    justify-content: center;
+    .grid_title{
+        
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 40px;
+
+        @include four-k{
+            margin: 0px 290px;
+        }
+
+        @include large-laptop{
+            margin: 0 150px;
+        }
+
+        @include small-laptop{
+            margin: 0 10px;
+        }
+
+        @include large-tablet{
+            justify-content: center;
+        }
+        
+
+        h1{
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 40px;
 
 
-    h1{
+            @include large-laptop{
+                    
+            }
 
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 70px;
-        font-weight: 400;
-        margin-right: 450px;
-        padding-right: 70px;
+            @include small-laptop{
+                
+            }
+
+            @include large-tablet{
+                
+            }
+
+            @include med-tablet{
+                
+            }
+
+            @include small-tablet{
+                
+            }
+
+            @include large-phone{
+
+            }
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+            border: 1px solid black;
+            padding: 15px 30px;
+            height: 0;
+            align-items: center;
+            display: flex;
+            font-size: 15px;
+            font-family: 'Josefin Sans', sans-serif;
+            
+
+            @include large-tablet{
+                display: none;
+            }
+
+        }
     }
 
-    a{
 
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 15px;
-        font-weight: 800;
-        text-decoration: none;
-        color: black;
-        border: 1px solid black;
-        padding: 10px 25px 10px 25px;
-        margin-left: 330px;
-
-    }
-}
-
-.creation-cont{
-
-    
+.grid_cont{
 
     display: grid;
-    grid-template-columns: 400px 400px 400px 400px;
-    grid-template-rows: 680px;
     justify-content: center;
+    grid-template-columns: 270px 270px 270px 270px;
+    grid-template-rows: 470px;
+    grid-column-gap:  5px;
+    margin: 30px;
+    
 
-    .grid-1{
+    @include large-tablet{
+
+        grid-template-columns: 400px;
+        grid-template-rows:  160px 160px 160px 160px 160px 160px 160px 160px;
+
+    }
+    .grid_item{
+
+        display: grid;
+
+
+        @include large-laptop{
+                    
+        }
+
+        @include small-laptop{
+            
+            
+        }
+
+        @include large-tablet{
+            height: 280px;
+        }
+
+        @include med-tablet{
+           
+           
+        }
+
+        @include small-tablet{
+          
+            height: 300px;
+
+        }
+
+        @include creation-phone-750px{
+            height: 280px;
+        }
+
+        @include large-phone{
+            height: 260px;
+        }
+
+        @include creation-phone-600px{
+            height: 210px;
+
+        }
+
+        @include med-phone{
+            height: 170px;
+
+        }
+ 
+
+        .grid_img{
+
+            div{
+
+                @include four-k{
+                    background: black;
+                    width: 255px;
+                    height:450px;
+                    opacity: 0.3;
+                    position: absolute;   
+                }
+
+                @include large-tablet{
+                    background: black;
+                    width: 400px;
+                    height:145px;
+                    opacity: 0.3;
+                    position: absolute;
+                }
+            }
+
+            .deep_earth_mobile{
+
+                @include four-k{
+                    display: none;
+                }
+
+                @include large-tablet{
+                    display: block;
+                }
+            }
+
+            .deep_earth_desktop{
+
+                @include four-k{
+                    display: block;
+                }
+
+                @include large-tablet{
+                    display: none;
+                }
+            }
+
+            .night_arcade_mobile{
+               
+                @include four-k{
+                    display: none;
+                }
+                
+                @include large-tablet{
+                    display: block;
+                }
+            }
+
+            .night_arcade_desktop{
+
+                @include four-k{
+                    display: block;
+                }
+
+                @include large-tablet{
+                    display: none;
+                }
+            }
+
+            .soccer_team_mobile{
+                
+                @include four-k{
+                    display: none;
+                }
+
+                @include large-tablet{
+                    display: block;
+                }
+            }
+
+            .soccer_team_desktop{
+
+                @include four-k{
+                    display: block;
+                }
+
+                @include large-tablet{
+                    display: none;
+                }
+            }
+            
+
+            .the_grid_mobile{
+                
+                @include four-k{
+                    display: none;
+                }
+
+                @include large-tablet{
+                    display: block;
+                }
+            }
+
+            .the_grid_desktop{
+
+                @include four-k{
+                    display: block;
+                }
+
+                @include large-tablet{
+                    display: none;
+                }
+            }
+
+            .above_vr_mobile{
+                
+                @include four-k{
+                    display: none;
+                }
+
+                @include large-tablet{
+                    display: block;
+                }
+            }
+
+            .above_vr_desktop{
+
+                @include four-k{
+                    display: block;
+                }
+
+                @include large-tablet{
+                    display: none;
+                }
+            }
+
+            .pocket_mobile{
+                
+                @include four-k{
+                    display: none;
+                }
+
+                @include large-tablet{
+                    display: block;
+                }
+            }
+
+            .pocket_desktop{
+
+                @include small-laptop{
+                    display: block;
+                }
+
+                @include large-tablet{
+                    display: none;
+                }
+            }
+
+            .curiousity_mobile{
+                
+                @include four-k{
+                    display: none;
+                }
+
+                @include large-tablet{
+                    display: block;
+                }
+            }
+
+            .curiousity_desktop{
+
+                @include small-laptop{
+                    display: block;
+                }
+
+                @include large-tablet{
+                    display: none;
+                }
+            }
+
+            .fish_eye_mobile{
+                
+                @include four-k{
+                    display: none;
+                }
+                @include large-tablet{
+                    display: block;
+                }
+            }
+
+            .fish_eye_desktop{
+
+                @include small-laptop{
+                    display: block;
+                }
+
+                @include large-tablet{
+                    display: none;
+                }
+            }
+
+            @include four-k{
+                    
+            
+            }
+
+
+            @include large-laptop{
+                    
+            }
+
+            @include small-laptop{
+                
+            }
+
+            @include large-tablet{
+                bottom: 100px;
+
+            }
+
+            @include med-tablet{
+                
+            }
+
+            @include small-tablet{
+              
+
+            }
+
+            @include large-phone{
+        
+                
+
+            }
+
+            @include med-phone{
+        
+
+            }
+
+            img{
+     
+                max-width: 100%;
+
+            }
+
+            h3{
+
+                position: relative;
+                font-family: 'Josefin Sans', sans-serif;
+                color: white;
+                margin: 20px;
+                bottom: 110px;
+                font-size: 30px;
+                text-align: center;
+
+    
+                @include large-tablet{
+                    bottom: 100px;
+                    font-size: 30px;
+                    text-align: left;
+                }
+
+                @include med-tablet{
+                }
+
+                @include small-tablet{
+                    
+                }
+
+                @include large-phone{
+                    
+                    
+                }
+            }
+        }
+
+    }
+
+    .see_all_bottom_btn{
+
+        display: none;
+
+        @include large-tablet{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
 
         a{
 
             text-decoration: none;
-     
-        img{
-
-            height: 650px;
-        }
-
-        .grid-txt{
-
-            position: relative;
+            color: black;
+            border: 2px solid black;
+            padding: 15px 70px;
+            font-size: 15px;
+            letter-spacing: 4px;
+            font-weight: bolder;
             font-family: 'Josefin Sans', sans-serif;
-            font-size: 30px;
-            font-weight: 400;
-            text-decoration: none;
-            bottom: 220px;
-            left: 30px;
-            color: white;
         }
-        
+
     }
-
-}
-
-.grid-2{
-
-    a{
-
-        text-decoration: none;
- 
-    img{
-
-        height: 650px;
-    }
-
-    .grid-txt{
-
-        position: relative;
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 30px;
-        font-weight: 400;
-        text-decoration: none;
-        bottom: 220px;
-        left: 30px;
-        color: white;
-    }
-    
-}
-
-}
-
-.grid-3{
-
-    a{
-
-        text-decoration: none;
- 
-    img{
-
-        height: 650px;
-    }
-
-    .grid-txt{
-
-        position: relative;
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 30px;
-        font-weight: 400;
-        text-decoration: none;
-        bottom: 220px;
-        left: 30px;
-        color: white;
-    }
-    
-}
-
-}
-
-.grid-4{
-
-    a{
-
-        text-decoration: none;
- 
-    img{
-
-        height: 650px;
-    }
-
-    .grid-txt{
-
-        position: relative;
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 30px;
-        font-weight: 400;
-        text-decoration: none;
-        bottom: 220px;
-        left: 30px;
-        color: white;
-    }
-    
-}
-
-}
-
-.grid-5{
-
-    a{
-
-        text-decoration: none;
- 
-    img{
-
-        height: 650px;
-    }
-
-    .grid-txt{
-
-        position: relative;
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 30px;
-        font-weight: 400;
-        text-decoration: none;
-        bottom: 220px;
-        left: 30px;
-        color: white;
-    }
-    
-}
-
-}
-.grid-6{
-
-    a{
-
-        text-decoration: none;
- 
-    img{
-
-        height: 650px;
-    }
-
-    .grid-txt{
-
-        position: relative;
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 30px;
-        font-weight: 400;
-        text-decoration: none;
-        bottom: 220px;
-        left: 30px;
-        color: white;
-    }
-    
-}
-
-}
-
-.grid-7{
-
-    a{
-
-        text-decoration: none;
- 
-    img{
-
-        height: 650px;
-    }
-
-    .grid-txt{
-
-        position: relative;
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 30px;
-        font-weight: 400;
-        text-decoration: none;
-        bottom: 220px;
-        left: 30px;
-        color: white;
-    }
-    
-}
-
-}
-
-
-.grid-8{
-
-    a{
-
-        text-decoration: none;
- 
-    img{
-
-        height: 650px;
-    }
-
-    .grid-txt{
-
-        position: relative;
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 30px;
-        font-weight: 400;
-        text-decoration: none;
-        bottom: 220px;
-        left: 30px;
-        color: white;
-    }
-    
-}
-
-}
-
-
 
 }
