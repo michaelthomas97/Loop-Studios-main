@@ -1,0 +1,202 @@
+//HEADER
+
+@mixin header_logo_txt{
+//LOGO text "loopstudios"
+color: white;
+font-family: 'Alata', sans-serif;
+font-size: 55px;
+text-decoration: none;
+
+    @include large-tablet{
+    font-size: 50px;
+    }
+}
+
+@mixin header_nav_txt{
+//Desktop Menu Nav Links
+text-decoration: none;
+color: white;
+font-family: 'Alata', sans-serif;
+position: relative;
+font-size: 20px;
+
+    @include large-tablet{
+    //Hamburger Menu Nav Links
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    }
+}
+
+@mixin header_h1{
+//"IMMERSIVE EXPERIENCES THAT DELIVER"
+font-family: 'Josefin Sans', sans-serif;
+font-size: 100px;
+font-weight: 400;
+color: white;
+text-align: center; 
+
+    @include large-laptop{
+    font-size: 80px;
+    }
+
+    @include med-laptop{
+    font-size: 70px;
+    }
+
+    @include small-laptop{
+    font-size: 70px;
+    }
+
+    @include large-tablet{
+    font-size: 80px;
+    }
+
+    @include med-tablet {
+    font-size: 70px;
+    }
+
+    @include large-phone{
+    font-size: 60px;
+    }
+
+    @include med-phone{
+    font-size: 50px;
+    }
+}
+
+//INTERACTIVE
+
+//Interactive H1 "The Interactive In Interactive VR"
+@mixin interactive_h1{
+font-family: 'Josefin Sans', sans-serif;
+font-size: 50px;
+text-align: center;
+
+    @include large-laptop{
+    font-size: 40px;
+    }
+
+    @include large-tablet{
+    font-size: 40px;
+    }
+
+    @include large-phone{
+    font-size: 35px;
+    }
+}
+
+//Interactive Paragraph "Founded in 2011, Loopstudios has been..."
+@mixin interactice_p{
+font-family: 'Alata', sans-serif;
+font-size: 16px;
+text-align: center;
+opacity: 0.4;
+
+    //4K MONITER
+    @include four-k{
+    font-size: 14px;
+
+    //The line break Below stops the paragraph text having a restricted width...
+
+        br{
+        content: "";
+        }
+
+        br::after{
+        content: " ";
+        }
+
+    }
+
+    @include large-tablet{
+    font-size: 20px;
+
+    //Blocking the Line break allows the text to be restricted...
+
+        br{
+        display: block;
+        }
+    }
+
+    @include large-phone{
+    font-size: 18px;
+    }
+}
+
+//CREATIONS 
+
+//Main Creations H1 title "Our creations"
+@mixin creation_h1{
+font-family: 'Josefin Sans', sans-serif;
+font-size: 40px;
+}
+
+
+//Creation Grid item H3 Title
+@mixin creation_h3{
+font-size: 30px;
+text-align: center;
+font-family: 'Josefin Sans', sans-serif;
+color: white;
+}
+
+//Creation "See All" desktop version
+@mixin creation_desktop_button{
+text-decoration: none;
+color: black;
+font-size: 15px;
+font-family: 'Josefin Sans', sans-serif;
+}
+
+
+//Creation "See All" mobile / tablet version
+@mixin creation_tab_mobile_button{
+text-decoration: none;
+color: black;
+font-size: 15px;
+font-family: 'Josefin Sans', sans-serif;
+}
+
+
+//FOOTER
+
+//Footer main H1 "loopstudios"
+@mixin footer_h1{
+color: white;
+font-family: 'Alata', sans-serif;
+font-size: 35px;
+text-decoration: none;
+}
+
+//Footer Nav Links
+@mixin footer_anchors{
+text-decoration: none;
+color: white;
+font-family: 'Alata', sans-serif;
+font-size: 20px;
+font-weight: 200;
+
+    @include large_tablet{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    }
+}
+
+//Footer Nav_links hover
+@mixin anchor_hover{
+opacity: 0.7;
+}
+
+//Footer Copyright Text
+@mixin copyright_txt{
+font-family: 'Alata', sans-serif;
+opacity: 0.5;
+color: white;
+margin: 0px;
+
+    @include large-tablet{
+    text-align: center;
+    }
+}

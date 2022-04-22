@@ -1,3 +1,5 @@
+//DISPLAY MIXINS
+
 @mixin flex_row_center{
     display: flex;
     flex-direction: row;
@@ -12,11 +14,44 @@
     justify-content: center;
 }
 
-@mixin hero_cont{
-    position: relative;
-    border-bottom: 1px solid #E2E8F0;
+@mixin display_flex{
+    display: flex;
 }
 
+@mixin display_row_flex{
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin display_col_flex{
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin display_flex_around{
+    display: flex;
+    justify-content: space-around;
+
+    @include large-tablet{
+        justify-content: center;
+    }
+}
+
+@mixin display-flex-evenly{
+    display: flex;
+    justify-content: space-evenly;    
+    align-items: center;
+    flex-direction: row;
+}
+
+
+//HERO CONTAINER
+
+@mixin hero_cont{
+    position: relative;
+}
+
+//HERO BACKGROUND IMAGE
 @mixin hero_img{
     background-image: url('../images/desktop/image-hero.jpg');
     background-position: center;
@@ -25,21 +60,73 @@
     height: 1100px;
     width: 100%;
     position: relative;
+
+    @include large-laptop{
+    height: 1000px;
+    }
+
+    @include med-laptop{
+    height: 900px;
+    }
 }
 
-@mixin hero_nav{
+    //HERO NAVBER
+    @mixin hero_nav{
     position: absolute;
-    top: 10px;
+    top: 20px;
     width: 100%;
-}
+    }
 
-@mixin hero_logo{
+    //LOOPSTUDIOS LOGO
+    @mixin hero_logo{
     margin: 0px 100px;
+
+    @include large-laptop{
+    margin: 0px 75px;
+    }
+
+    @include med-laptop{
+    margin: 0px 60px;
+    }
+
+    @include large-tablet{
+    z-index: 2;
+    margin: 0px 45px;
+    }
+
+    @include med-tablet{
+    margin: 0px 35px;
+    }
+
+    @include small-tablet{
+    margin: 0px 25px;
+    }
+
+    @include large-phone{
+    margin: 0px 20px;
+    }
 }
 
-@mixin hero_logo_txt{
-color: white;
-font-family: 'Alata', sans-serif;
-font-size: 55px;
-text-decoration: none;
+//Header Mobile and tab navbar
+
+@mixin mobile_tab_navbar{
+    @include large-tablet{
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: -100%;
+    gap: 0;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.3s;
+    justify-content: center;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    border-radius: 20px;
+    width: 100%;
+    padding: 500px 100px;
+    }
 }
+

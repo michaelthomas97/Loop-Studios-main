@@ -1,155 +1,94 @@
 .interactive_cont{
 
-    margin: 120px 0px 70px 0px;
-    display: flex;
-    justify-content: center;
+margin: 120px 0px 70px 0px;
+@include flex_row_center;
 
-    @include large-laptop{
-    }
-
-    @include med-laptop{
-    }
-
-    @include small-laptop{
-        margin-bottom: 120px;
-    }
-
-    @include large-phone{
-    
-    }
-
-
-    @include large-tablet{
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 100px;
-    }
-
-
-
-    .interactive_img{
-
-        
-        @include large-laptop{
-            margin-bottom: 30px;
-        }
-
-        @include large-tablet{
-            margin: 20px;
-        }
-
-        img{
-          
-            @include four-k{
-                width: 100%;
-            }
-
-            @include large-tablet{
-             
-            }
-
-            @include small-tablet{
-            
-            }
-
-        }
-
-    }
-
-    .interactive_txt{
-
-        @include four-k{
-            max-width: 550px;
-            position: relative;
-            background: white;
-            padding: 40px 0px 0px 30px;
-            top: 155px;
-            right: 80px;
-            height: 260px;
-        }
-
-        @include large-laptop{
-            max-width: 600px;
-            top: 170px;
-            right: 80px;
-        }
-
-        @include med-laptop{
-
-            top: 200px;
-            right: 100px;
-    }
-
-    @include small-laptop{
-
-        max-width: 550px;
-        top: 155px;
-        right: 100px;
+@include small-laptop{
+margin-bottom: 120px;
 }
 
-        @include large-tablet{
-        
-            top: 0;
-            right: 0;
-            padding: 0px;
-        }
+@include large-tablet{
+@include flex_col_center;
+margin-top: 100px;
+}
 
-    
+.interactive_img{
 
-        h1{
-            font-family: 'Josefin Sans', sans-serif;
-            font-size: 50px;
-            text-align: center;
+@include large-laptop{
+margin-bottom: 30px;
+}
 
-            @include large-laptop{
-                font-size: 40px;
-            }
+@include large-tablet{
+margin: 20px;
+}
 
-            @include large-tablet{
-                font-size: 40px;
-            }
+img{
 
-            @include large-phone{
-                font-size: 35px;
-            }
+@include four-k{
+width: 100%;
+}
 
-        }
+@include large-tablet{
 
-        p{
-            font-family: 'Alata', sans-serif;
-            font-size: 16px;
-            text-align: center;
-            opacity: 0.4;
+}
 
-            @include four-k{
+@include small-tablet{
 
-                font-size: 14px;
+}
 
-                br{
-                    content: "";
-                }
+}
 
-                br::after{
-                    content: " ";
-                }
-            }
-            @include large-tablet{
-                font-size: 20px;
+}
 
-                
+.interactive_txt{
 
-                br{
-                    display: block;
-                }
-            }
+@include four-k{
+max-width: 550px;
+position: relative;
+background: white;
+padding: 40px 0px 0px 30px;
+top: 155px;
+right: 80px;
+height: 260px;
+}
 
-            @include large-phone{
-                font-size: 18px;
-            }
+@include large-laptop{
+max-width: 600px;
+top: 170px;
+right: 80px;
+}
 
-        }
-    }
+@include med-laptop{
+
+top: 200px;
+right: 100px;
+}
+
+@include small-laptop{
+
+max-width: 550px;
+top: 155px;
+right: 100px;
+}
+
+@include large-tablet{
+
+top: 0;
+right: 0;
+padding: 0px;
+}
+
+
+
+h1{
+
+@include interactive_h1;
+}
+
+p{
+@include interactice_p;
+
+}
+}
 
 }
